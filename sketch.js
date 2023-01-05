@@ -88,6 +88,7 @@ function draw() {
  
   if (gameState === END) {
   bow.destroy();
+  arrowGroup.destroyEach();
   scene.velocityX = 0;
   score = score - score;
 }
