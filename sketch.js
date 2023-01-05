@@ -89,13 +89,7 @@ function draw() {
   if (gameState === END) {
   bow.destroy();
   scene.velocityX = 0;
-}
-
- 
-if (redB.isTouching(arrowGroup)){
-  redB.destroyEach();
-  arrowGroup.destroyEach();
-  score = score+4;
+  score = score - score;
 }
 
 if (greenB.isTouching(arrowGroup)){
